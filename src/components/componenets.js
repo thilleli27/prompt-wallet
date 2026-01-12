@@ -5,3 +5,5 @@ const   Components = () => {
         </div>
     )
 }
+
+export default Components
