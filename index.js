@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+import { app, BrowserWindow } from 'electron';
 
 function createWindow() {
   // Créer la fenêtre du navigateur.
@@ -11,7 +11,7 @@ function createWindow() {
   });
 
   // et chargez l'index.html de l'application.
-  win.loadURL('http://localhost:3000');
+  win.loadFile('index.html');
 }
 
 app.whenReady().then(createWindow);     
